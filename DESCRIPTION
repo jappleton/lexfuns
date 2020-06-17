@@ -1,12 +1,22 @@
 Package: refuns
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A collection of functions used by the GCPS Office of Research & Evaluation
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Authors@R: 
+  c(person(given = "Matthew",
+           family = "Lovelace",
+           role = c("aut", "cre"),
+           email = "matthew.lovelace@gcpsk12.org"),
+    person(given = "James",
+           family = "Appleton",
+           role = "aut",
+           email = "james.appleton@gcpsk12.org"))
+Description: The miscellaneous functions contained in this package are intended to make life a little easier when using R.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
+Imports: magrittr
+Language: en-US
+URL: https://github.com/gcpsresearch/refuns
+BugReports: https://github.com/gcpsresearch/refuns/issues

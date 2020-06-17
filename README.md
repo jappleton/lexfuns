@@ -21,17 +21,17 @@ library(refuns)
 ```
 
 ## Need Help?
-To see all of the functions in the package:
+To see the package info:
 ``` r
 package?refuns
 ```
 
-To review help pages:
+To see a list of all functions in the package (and links to their help pages):
 ``` r
 help(package = refuns)
 ```
 
-To find documentation for a specific function:
+To find the help page for a specific function:
 ``` r
 # Put a question mark in front of a function name to find its documentation. For example:
 ?rnd_like_xl
