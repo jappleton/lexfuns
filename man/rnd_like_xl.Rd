@@ -14,19 +14,15 @@ rnd_like_xl(val, n_dec)
 \description{
 This function rounds numbers in the same way that Excel does:
 
-Rounds up the number line when values are positive and trailing value is 5-9.
+Rounds up the number line when values are positive and trailing value is 5 through 9.
 
-Rounds down the number line when values are negative and trailing value is 5-9.
+Rounds down the number line when values are negative and trailing value is 5 through 9.
 
-If a trailing value is 5 exactly, always rounds in the same direction (i.e., up the number
+If a trailing value is 5 exactly, this function always rounds in the same direction (i.e., up the number
 line when value is positive, down the number line when value is negative). This is unlike
-R which uses a more statistically valid but less widely accepted rounding rule of randomly
+R's round() function which uses a more statistically valid but not as common rounding rule of randomly
 rounding half of the exact 5s up and half of the exact 5s down.
 
-Solves floating point rounding errors that seem to occur at a rate of about 1/200 or so,
-in which a value that looks like an exact 5 (e.g., 0.5) is stored with some "decimal dust"
-(e.g., looks like 0.5 but is really 0.4999999999999999) because, long story short,
-computers are weird.
-
-Would not solve bit flips caused by cosmic rays, though. Which is a very rare, but real thing. Look it up.
+It also resolves floating point rounding issues that would otherwise occur from time to time (this is
+why there is a 0.00000001 added/subtracted to the value prior to rounding).
 }

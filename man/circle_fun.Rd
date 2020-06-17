@@ -20,6 +20,6 @@ This function generates data that can be used to draw circles in ggplot.
 \dontrun{
 circle_data <- circle_fun(c(1,-1), 2.3, npoints = 100)
 library("ggplot2")
-ggplot(dat,aes(x,y)) + geom_path()
+ggplot(circle_data, aes(x,y)) + geom_path()
 }
 }

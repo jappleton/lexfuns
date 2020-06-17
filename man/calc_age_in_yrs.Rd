@@ -17,7 +17,7 @@ This function calculates age in years as of a certain date, correctly accounting
 \examples{
 \dontrun{
 born <- "1981/02/25"
-today <- Sys.Date()
-calc_age_in_yrs(born, today)
+yesterday <- Sys.Date() - 1
+calc_age_in_yrs(born, yesterday)
 }
 }

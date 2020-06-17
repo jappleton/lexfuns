@@ -10,7 +10,7 @@ install_and_load_pkgs(pkgs_needed)
 \item{pkgs_needed}{Input a character vector of the packages you want to install/load. Can be a single package (e.g., "dplyr") or multiple (c("dplyr", "tidyr")).}
 }
 \description{
-This function checks if each package that needs to be loaded has been installed installed, installs any that are not, and then loads all of the listed packages.
+This function checks if each package that needs to be loaded has been installed, installs any that are not, and then loads all of the listed packages.
 }
 \examples{
 \dontrun{
