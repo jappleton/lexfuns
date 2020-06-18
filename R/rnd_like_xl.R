@@ -1,0 +1,24 @@
+#' @title Round like Excel.
+#'
+#' @description This function rounds numbers in the same way that Excel does:
+#'
+#' Rounds up the number line when values are positive and trailing value is 5 through 9.
+#'
+#' Rounds down the number line when values are negative and trailing value is 5 through 9.
+#'
+#' If a trailing value is 5 exactly, this function always rounds in the same direction (i.e., up the number
+#' line when value is positive, down the number line when value is negative). This is unlike
+#' R's round() function which uses a more statistically valid but not as common rounding rule of randomly
+#' rounding half of the exact 5s up and half of the exact 5s down.
+#'
+#' It also resolves floating point rounding issues that would otherwise occur from time to time (this is
+#' why there is a 0.00000001 added/subtracted to the value prior to rounding).
+#'
+#' @param val Input the value to be rounded.
+#' @param n_dec Input the number of decimal places to round to (e.g., 0 = round to integer, 1 = round to the tenths place, 2 = round to the hundreths place, etc.).
+#' @export
+rnd_like_xl = function(val, n_dec) {
+  ifelse(val >= 0,
+         round(val + 0.000000001, n_dec),
+         round(val - 0.000000001, n_dec))
+}
