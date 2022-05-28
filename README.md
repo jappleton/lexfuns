@@ -1,34 +1,34 @@
-# refuns
+# lexfuns
 
 ## Overview
 
-refuns is an R package consisting of miscellaneous functions used by the GCPS Office of Research & Evaluation.
+lexfuns is an R package consisting of miscellaneous functions used by the GCPS Office of Research & Evaluation and adapted for Lexia Learning.
 
 ## Installation
 
-To install the refuns package from GitHub, run these two lines of code:
+To install the lexfuns package from GitHub, run these two lines of code:
 
 ``` r
 install.packages("devtools")  
-devtools::install_github("gcpsresearch/refuns")
+devtools::install_github("jappleton/lexfuns")
 ```
 
 ## Using the refuns package
 
-Once you've installed refuns, you can load it to your workspace as you would any R package installed in your library:
+Once you've installed lexfuns, you can load it to your workspace as you would any R package installed in your library:
 ``` r
-library(refuns)
+library(lexfuns)
 ```
 
 ## Need Help?
 To see the package info:
 ``` r
-package?refuns
+package?lexfuns
 ```
 
 To see a list of all functions in the package (and links to their help pages):
 ``` r
-help(package = refuns)
+help(package = lexfuns)
 ```
 
 To find the help page for a specific function:
