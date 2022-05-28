@@ -2,7 +2,7 @@
 
 ## Overview
 
-lexfuns is an R package consisting of miscellaneous functions used by the GCPS Office of Research & Evaluation and adapted for Lexia Learning.
+lexfuns is an R package consisting of miscellaneous functions used by the GCPS Office of Research & Evaluation and adapted for Lexia Learning. It will eventually be imported and evolved as a BitBucket repo.
 
 ## Installation
 
